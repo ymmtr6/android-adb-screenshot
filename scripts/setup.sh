@@ -33,6 +33,9 @@ fi
 if ! command -v scrcpy >/dev/null 2>&1; then
   missing+=("scrcpy")
 fi
+if ! command -v magick >/dev/null 2>&1 && ! command -v convert >/dev/null 2>&1; then
+  missing+=("imagemagick")
+fi
 
 if [[ ${#missing[@]} -eq 0 ]]; then
   echo "必要なツールは揃っています。"
