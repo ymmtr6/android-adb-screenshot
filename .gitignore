@@ -1,0 +1,4 @@
+.DS_Store
+assets/**/*.png
+assets/**/*.pdf
+scripts/run_all.env
